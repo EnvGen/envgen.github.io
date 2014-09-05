@@ -2,18 +2,6 @@
 layout: default
 ---
 
-<body class="index loading">
-	
-		<!-- Header -->
-			<header id="header" class="alt">
-				<h1 id="logo"><a href="index.html">EnvGen</a></h1>
-				<nav id="nav">
-					<ul>
-						<li class="current"><a href="index.html">Welcome</a></li>
-					</ul>
-				</nav>
-			</header>
-
 		<!-- Banner -->		
 			<section id="banner">
 				
@@ -47,16 +35,15 @@ layout: default
 
 				<header class="special container">
 					<span class="icon fa-bar-chart-o"></span>
-                    <h2>We study <strong>microbial communities</strong> of bacteria and other life forms <br />
-                        using shotgun and amplicon <strong>sequencing</strong>.
-				    </h2>
-                    <p>Environmental bacteria have a vast influence on the world and are to a large extent unexplored due to <br />
-                    difficulties in culturing most of the species present in nature. Using direct environmental sequencing approaches <br />
-                    we're able to study environments ranging from the Baltic sea to the moose gut.</p>
+                    <h2> We study <strong>microbial communities</strong> using shotgun metagenomics and amplicon <strong>sequencing</strong> and develop methodology for enhancing such studies.
+                    </h2>
+                    <p>
+                    The activities of complex microbial communities shape our planet and affect the health of the humans. In our group we employ metagenomics and taxonomic marker gene sequencing to explore patterns of microbial diversity and reconstruct genomes and metabolic pathways of microbes in environments ranging from the Baltic Sea to the rumen of Moose. We also develop molecular and bioinformatics tools for enhancing the information output from such studies.
+                    </p>
 				</header>
 					
 				<!-- One -->
-					<section class="wrapper style3 container special">
+					<section class="wrapper style3 container special", id="who">
 					
 						<header class="major">
 							<h2>Who we are</h2>
@@ -68,9 +55,11 @@ layout: default
 								<section>
 									<a href="#" class="image feature"><img src="images/AndersA.jpg" alt="" /></a>
 									<header>
-										<h3>Anders Andersson</h3>
+										<h3>Anders Andersson (PI)</h3>
 									</header>
-									<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+                                    <p>
+                                        Anders received his PhD in 2005 at KTH Royal Institute of Technology after graduate studies on functional genomics.  Thereafter he conducted postdoctoral studies at the Karolinska Institute, University of California Berkeley, and Uppsala University, working on metagenomics approaches to study microbial communities of different environments (the human gut microbiota, biofilms of acid mine drainage, and bacterioplankton of lakes and the Baltic Sea). In 2010 he returned to KTH, starting his tenure track and building up a group at Science for Life Laboratory in Stockholm. In 2014 he was promoted to associate professor.
+                                    </p>
 								</section>
 
 							</div>
@@ -105,7 +94,8 @@ layout: default
 									<header>
 										<h3>Johannes Alneberg</h3>
 									</header>
-									<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+                                    <p> With a background in mathematics, statistics and computer science, Johannes is developing Bioinformatic methods to improve the analysis of metagenomic data. He started his PhD studies in May 2014 after doing a master thesis project within the group.</p>
+                                    <p>The first projects Johannes have been involved with conserns clustering of metagenomic contigs, reconstructing dominant baltic sea bacterioplankton and using microbial signatures for water quality assessment. Johannes is co-first author of CONCOCT and currently maintaining the code.</p>
 								</section>
 
 							</div>
@@ -132,7 +122,37 @@ layout: default
                             </div> 
                         </div>
                     </section>
-					
+
+                    <section class="wrapper style1 container special", id="press">
+                        <h2>Press Releases</h2>
+                        <ul>
+                            <li><a href="http://www.scilifelab.se/news/scilifelab-chosen-for-large-eu-project-to-improve-baltic-sea-health/">EU-project for microbial monitoring of the Baltic Sea</a></li>
+                            <li><a href="http://www.liu.se/forskning/forskningsnyheter/1.489366?l=en">Decreased gut bacterial diversity in infants born by Caesarean section</a></li>
+                            <li><a href="http://www.scilifelab.se/news/international-study-suggests-human-genes-influence-gut-microbial-composition/">A human gene associated with gut microbiota composition</a></li>
+                            <li><a href="http://www.kth.se/en/aktuellt/nyheter/ostersjons-flora-av-bakterieplankton-kartlagd-1.178136">A 3D map of the Baltic Sea microbiome</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="wrapper style3 container special", id="projects">
+                        <h2>Projects</h2>
+                        <h3>Genomics and regulatory networks of Baltic Sea bacterioplankton communities</h3>
+                        <p>The Baltic Sea suffers from environmental problems such as eutrophication and overfishing that are manifested in e.g. massive blooms of cyanobacteria in the summer and in oxygen depleted bottom waters.  In all marine environments, including the Baltic Sea, microbes are essential for the fluxes of nutrients and energy and are integral components of the food web. Despite their ecosystem importance little is known about Baltic Sea microbial communities and how they are regulated. In collaboration with Jarone Pinhassi’s lab at the Linnaeus University we conduct a project where the surface water of an off-shore station east of Öland, the Linnaeus Microbial Observatory (LMO), is sampled twice weekly (started 2011, still ongoing). Samples from this station are forming the basis for two of our main projects concerning the Baltic Sea.</p>
+                        <h3>Genomic reconstruction of dominant Baltic Sea bacterioplankton</h3>
+                        <p>Although the sea is comprised of thousands of different microbial species, their abundance distributions are very skewed and a limited number of species make up most of the cells (20 species constitute >50% of the cells in surface water). Having the genomes of the more abundant populations sequenced will be important not only for the understanding of their specific roles in the ecosystem but also for understanding the ecosystem as a whole. We are performing shotgun metagenomics on a large number of the seasonal LMO samples. Overlapping short sequence reads are assembled into longer genome fragments. However, due to e.g. repeated sequences within and across the genomes, assembly results in fragmented genomes. A challenge is then to group fragments (contigs) stemming from the same genome. Our program CONCOCT that we recently developed with Christopher Quince and others (Alneberg et al 2014) allows us to, given that we have a large number of samples, group contigs into genomes with high accuracy. With this method and our extensive dataset we aim to present a catalogue of the most abundant microbial genomes of the Baltic Sea. As a proof of concept we used a similar approach to reconstruct the genome of one the most abundant bacteria in the Baltic Sea (Herlemann et al mBio 2013).
+                        </p>
+                        <h3>Reconstructing a regulatory network of Baltic Sea plankton assemblages</h3>
+                        <p>By sequencing of PCR amplified taxonomic marker genes we can accurately measure the abundance of thousands of different bacterioplankton and single-celled eukaryotes in the seawater samples. For each species we will obtain a temporal profile over the years that the sampling has been on-going. In addition to the sequences we will have environmental data on temperature, nutrient levels etc. From this data the aim is to deduce the primary control mechanisms of the major plankton groups, such as bloom forming cyanobacteria. Preliminary data indicate that the different blooming events (spring bloom of eukaryotic phytoplankton and summer bloom of cyanobacteria) induce major state shifts in the bacterioplankton assemblages. Algorithms stemming from systems biology will be used to reconstruct a regulatory network of the ecosystem, consisting of environment-species and species-species interactions. We are also planning to use single cell analysis as a complementary approach to deduce species-species interactions.</p>
+                        <h3>Exploring microbial signatures for water quality assessment</h3>
+                        <p>Since microbial communities respond rapidly to changes in environmental conditions, both at the scale of species composition and gene expression, they have great potential for being used as biomarkers of pollutants or other aspects of ecosystem health status. DNA sequencing technology develops extremely fast and within a few years it is likely that portable devices will be available for sequencing directly in the field. 
+ 
+We are partners of the EU-funded project BLUEPRINT (Biological lenses using gene prints). The aim of this project is to use metagenomics for monitoring of Baltic Sea water health status. Based on metagenomic data from hundreds of well characterized samples we will train algorithms to recognize different types of environmental conditions (such as early signs of oxygen depletion) based on the frequencies of taxonomic marker genes and/or genes coding for specific functions and/or metabolic pathways. We will be responsible for the bioinformatics workpackage within this project.  We are also participating in the EU-funded AFISmon project, where the aim is to develop an autonomous sampling device for collecting and storing water samples for metagenomics and metatranscriptomics analysis.
+ 
+Together with Stockholm Water we are exploring the potential of metagenomic sand taxonomic marker gene sequencing for tracking contaminations of wastewater in the stonewater system of Stockholm. This sometimes results from misconnections or leakages in the water system, which is problematic since this way wastewater may go un-cleaned into receiving water bodies. The goal is to find a faster and more reliable alternative to the current method that is based on culturing E. coli on selective media plates.</p>
+                        <h3>Taxonomic binning of metagenomic contigs</h3>
+                        <p>To be added</p>
+                        <h3>Primer Design</h3>
+                        <p>By sequencing of PCR amplified taxonomic marker genes we can accurately profile the microbial diversity within many samples in parallel. However, to minimize biases it is important to use primers that bind as non-selectively as possible. We have developed the program DegePrime (Hugerth et al - 1) that given a sequence alignmentfro each position finds the primer with a maximum degeneracy given by the user that matches as many sequences as possible. We used this to develop the primer pair 341F-805R that was show by another group to be the best primer pair for bacterial diversity studies out of 512 pairs tested. We also used DegePrime to greatly improve the coverage of a popular primer pair for assessing bacterial and archaeal diversity (515F-805R) and for developing a new primer pair for 18S rRNA gene surveys (574F-1123R) (Hugerth et al - 2).</p>
+                    </section>
 			</article>
 
 		<!-- CTA -->
